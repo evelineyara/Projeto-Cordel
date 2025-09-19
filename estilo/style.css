@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Henny+Penny&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Mansalva&family=Manufacturing+Consent&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Quicksand:wght@300..700&family=Shadows+Into+Light+Two&display=swap');
+
+:root {
+    --fonte01: "Nunito", cursive;
+    --fonte02: "Cookie", cursive;
+    --fonte03: "Caveat", cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    background-color: darkgray;
+    min-height: 100vh; /*100% da view hight, altura*/
+    font-family: var(--fonte01);
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    /*text-transform: uppercase; joga todas as letras para maiúsculas*/
+    font-variant: small-caps; /*todas as letras maiúsculas porém com as iniciais maiores.*/
+    font-size: 5vw; /*view width, largura da view port*/
+    font-family: var(--fonte01);
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte03);
+    font-weight: normal;
+    font-size: 2.8vw;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+section.normal {
+   background-image: linear-gradient(to right, rgb(161, 161, 161), rgb(0, 0, 0));
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(37, 37, 37);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.315);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.781);
+    display: inline-block;
+    padding: 5px;
+    color: white;
+    font-weight: normal;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.301);
+    border-radius: 10px;
+}
+
+section#img01 {
+    background-image: url(../imagens/social-media.jpg);
+    background-position: center;
+}
+
+section#img02 {
+    background-image: url(../imagens/cartas.jpg);
+    background-position: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    color: indigo;
+    transition-duration: 0.5s;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
